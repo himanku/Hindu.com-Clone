@@ -1,0 +1,98 @@
+
+.gridStyle:first-of-type>div> img {
+    display: block;
+    width: 100%;
+    height: 52%;
+}
+.gridStyle img {
+    display: block;
+    height: 95%;
+    width: 40%; 
+}
+
+.gridStyle:first-of-type > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #133b5a;
+}
+.gridStyle > div{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.textStyle {
+    font-size: 16px;
+    color: #282828;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+}
+.gridStyle:first-of-type>div>p>p:last-child {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFF;
+}
+.gridStyle:first-of-type>div>p>p:first-child {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.gridStyle2>div>img {
+    width: 32%;
+    height: 65px;
+}
+.gridStyle2:nth-of-type(2)>div>img {
+    display: block;
+    width:100%;
+    height: 100%;
+    
+}
+.gridStyle2:nth-of-type(2)>div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    box-shadow: inset -14px -87px 25px -4px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+.gridStyle2 {
+    background-color: white;
+}
+.gridStyle2:nth-of-type(3), .gridStyle2:nth-of-type(4) {
+    border-bottom: 1px dashed #b4b4b4;
+}
+.gridStyle2>div {
+    display: flex;
+}
+.gridStyle2:not(:nth-of-type(2))>div {
+    display: flex;
+    margin: 12px 8px; 
+}
+
+.gridStyle2>div>p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    display: block;
+    height: 56px;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 18px;
+    color: #282828;
+    font-family: "TundraWeb",serif;
+}
+.gridStyle2:nth-of-type(2)>div>p {
+    position: absolute;
+    display: block;
+    bottom:0px;
+    color:white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -.3px;
+    font-family: "Fira Sans",sans-serif;
+    background: transparent linear-gradient(to bottom,rgba(5,5,5,0) 0,transparent 0,rgba(71,71,71,0) 0,rgba(102,102,102,0) 0,rgba(28,28,28,0) 0,rgba(20,20,20,0.59) 32%,#0d0d0d 62%,#030303 100%) repeat scroll 0 0;
+}
+
