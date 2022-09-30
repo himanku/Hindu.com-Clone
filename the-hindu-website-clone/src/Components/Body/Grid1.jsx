@@ -1,11 +1,10 @@
 import { Box, Grid, GridItem, Image, Text} from '@chakra-ui/react';
 import React from 'react';
-import { gridData1 } from './Data/gridData1';
 import "./grid.css";
 
 const Grid1 = (props) => {
 
-    const {src1, src2, src3}= props;
+    const {src1, src2, src3, gridData1}= props;
     return (
         <Box width='73%' margin='auto' mt='4' >
             <Grid
