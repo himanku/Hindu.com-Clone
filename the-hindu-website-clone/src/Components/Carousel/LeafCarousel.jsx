@@ -90,7 +90,7 @@ function Card() {
       <Slider {...settings} style={{width:"73%", margin: "auto"}}>
         {SlideData.map((item) => (
           <div className="card" >
-            <div className="card-top" style={{width: "225px", height:"250px"}}>
+            <div className="card-top" style={{width: "225px", height:"250px", backgroundColor:'white'}}>
               <img
                 style={{width: "100%", height:"140px"}}
                 src={

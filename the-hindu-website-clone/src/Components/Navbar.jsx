@@ -1,29 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Logo from './Header/Logo';
 import Header from './Header/Header';
-import Ads from './Header/Ads';
 import Navlinks from './Header/Navlinks';
-import { Flex} from '@chakra-ui/react';
 import Headlines from './Body/Headlines';
-import Boxes from './Footer/Boxes';
-import BottomLinks from './Footer/BottomLines';
-import Footer from './Footer/Footer';
-import Card from './Carousel/LeafCarousel';
 
 
 const Navbar = () => {
     const style={
-        display: "none",
-        width: "70%",  
+        display: "none", 
+        src: 'https://tpc.googlesyndication.com/simgad/12264028490335591544'
     }
-    const display2={
-        display: "block",
-        margin: "auto"
-    }
-    const css={
-        left: "0",
-        right: "0"
-    }
+    
+    // const css={
+    //     left: "0",
+    //     right: "0"
+    // }
 
     
     return (
@@ -35,18 +26,12 @@ const Navbar = () => {
                 <Navlinks/>
                 <Ads right={css.right}/>
             </Flex> */}
-        
-        <Navlinks/>
-        <Headlines/>
-        <Header
-            width={style.width}
-            display={display2.display}
-            margin={display2.margin}
-            src={`https://www.thehindu.com/theme/images/th-online/logo.png`}
-        />
-        <Boxes/>
-        <BottomLinks/>
-        <Footer/>
+             {/* <Ads src={style.src}/>
+             <Ads src={display2.src}/> */}
+            <Navlinks/>
+            <Headlines/>
+            
+            
         </div>
     );
 }
