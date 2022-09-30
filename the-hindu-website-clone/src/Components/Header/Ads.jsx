@@ -22,3 +22,5 @@ export default Ads;
 
 //horizontal- https://tpc.googlesyndication.com/simgad/13537701184570468332
 //square- https://tpc.googlesyndication.com/simgad/9131466074289013803
+//square- https://tpc.googlesyndication.com/simgad/8097064822213211099
+//square- https://tpc.googlesyndication.com/simgad/9564559152148849490

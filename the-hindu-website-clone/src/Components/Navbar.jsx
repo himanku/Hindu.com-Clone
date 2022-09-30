@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from './Header/Logo';
 import Header from './Header/Header';
 import Navlinks from './Header/Navlinks';
-import Headlines from './Body/Headlines';
 
 
 const Navbar = () => {
@@ -29,7 +28,6 @@ const Navbar = () => {
              {/* <Ads src={style.src}/>
              <Ads src={display2.src}/> */}
             <Navlinks/>
-            <Headlines/>
             
             
         </div>
