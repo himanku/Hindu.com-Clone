@@ -2,10 +2,11 @@ import React from 'react';
 import { VStack, Text, Box, HStack, Flex, Spacer, Button } from '@chakra-ui/react';
 import { Icon } from '@chakra-ui/icons';
 import {FiMenu} from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
-const Navlinks = () => {
+const Navlinks = ({bgColor}) => {
     return (
-        <Box zIndex='2' width='73%' margin='auto' mt='2' padding='4px' borderBottom="1px solid #c8c8c3" position='sticky' top='0'>
+        <Box backgroundColor={bgColor} zIndex='3' width='73%' margin='auto' mt='2' padding='4px' borderBottom="1px solid #c8c8c3" position='sticky' top='0' >
             <HStack color='#5a5a5a' >
                 <Box p='0' mt='0' >
                     <VStack spacing={0} mt='0'>
@@ -27,7 +28,7 @@ const Navlinks = () => {
                 <Flex  ml='2' h='40px' gap='2'>
                     <Button fontSize='12px' alignSelf='flex-end' padding='2px 11px' size='sm' color='#fff' backgroundColor='#00419b'>GET TRIAL</Button>
                     <Button fontSize='12px' alignSelf='flex-end' padding='2px 11px' size='sm' color='282828' backgroundColor='#ffc000'>SUBSCRIBE NOW</Button>
-                    <Button fontSize='12px' alignSelf='flex-end' padding='2px 11px' variant='outline' size='sm' colorScheme='blue.600'>LOG IN</Button>
+                    <Button _hover={{ bg: "blue.900", color: "white" }} fontSize='12px' alignSelf='flex-end' padding='2px 11px' variant='outline' size='sm' colorScheme='blue.600'><Link to="/signup">LOG IN</Link></Button>
                 </Flex>           
             </HStack>
         </Box>

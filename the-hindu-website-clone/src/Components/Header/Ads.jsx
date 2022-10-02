@@ -3,9 +3,9 @@ import { Image, Box} from '@chakra-ui/react';
 const Ads = (props) => {
     const {left, right, src} = props;
     return (
-        <Box top='0' left={left} right={right}>
-            <Box m='3' mt='4' w='164px'  border="1px solid black" >
-                <Image display='block' h='100vh' w='100%' src={src}  alt="ad-img" />
+        <Box top='0' position='fixed' left={left} right={right}>
+            <Box m='1' mt='4' w='155px'  >
+                <Image display='block' h='96vh' w='100%' src={src}  alt="ad-img" />
             </Box>
         </Box>
         

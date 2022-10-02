@@ -54,6 +54,7 @@
     flex-direction: column;
     position: relative;
     height: 100%;
+    width: 100%;
     box-shadow: inset -14px -87px 25px -4px rgba(0,0,0,0.75);
     z-index: 2;
 }
@@ -72,8 +73,8 @@
 }
 
 .gridStyle2>div>p {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 4px;
     display: block;
     height: 56px;

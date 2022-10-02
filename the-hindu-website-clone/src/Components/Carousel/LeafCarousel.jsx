@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { SlideData } from './data';
-import {Text, Flex, Box, HStack} from "@chakra-ui/react"
+import {Text, Box, HStack} from "@chakra-ui/react"
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <img src='https://www.svgrepo.com/show/109459/left-arrow.svg' alt="prevArrow" {...props} />
@@ -11,7 +11,7 @@ import {Text, Flex, Box, HStack} from "@chakra-ui/react"
     <img src='https://www.svgrepo.com/show/83417/right-arrow.svg' alt="nextArrow" {...props} />
   );
 
-function Card() {
+function Card({title}) {
     const [cardCount, setcardCount] = React.useState(1);
 
     const handleClickadd = () => {
@@ -83,7 +83,7 @@ function Card() {
   return (
     <>
     <HStack margin='15px auto' whiteSpace='nowrap' gap='1' mb='15px' width='73%'>
-        <Text  fontSize='22px' color= '#133b5a' letterSpacing='-.23px' fontWeight='600' >Top Picks</Text>
+        <Text  fontSize='22px' color= '#133b5a' letterSpacing='-.23px' fontWeight='600' >{title}</Text>
         <Text  ml='10px' fontSize='22px' color= '#828282' letterSpacing='-.23px' fontWeight='600'>{cardCount}/10</Text>
         <Box borderBottom='1px solid #133b5a' height='12px' width="90%" ></Box>
     </HStack>
