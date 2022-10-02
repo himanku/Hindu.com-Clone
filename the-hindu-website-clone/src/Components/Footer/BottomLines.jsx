@@ -1,10 +1,11 @@
 import React from 'react';
 import { Text, Box, Flex } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 const BottomLinks = () => {
     return (
-        <Box width='73%' margin='auto' mt='2' padding='4px' top='0'     borderTop= 'solid 1px #c8c8c3'>
+        <Box width='73%' margin='auto' mt='2' padding='4px' top='0'  borderTop= 'solid 1px #c8c8c3'>
             <Flex h='40px' gap='1' color='#5a5a5a'>
-                <Text alignSelf='flex-end' p='1' fontSize='12px' fontWeight='600' color='#828282' >HOME</Text>
+                <Text alignSelf='flex-end' p='1' fontSize='12px' fontWeight='600' color='#828282' ><Link to='/'>HOME</Link></Text>
                 <Text alignSelf='flex-end' p='1' fontSize='12px' fontWeight='600' color='#828282' >NEWS</Text>
                 <Text alignSelf='flex-end' p='1' fontSize='12px' fontWeight='600' color='#828282' >CORONAVIRUS</Text>
                 <Text alignSelf='flex-end' p='1' fontSize='12px' fontWeight='600' color='#828282' >OPINION</Text>
